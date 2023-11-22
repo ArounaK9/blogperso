@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Hugo et github pages (2ème post) | Blog Personnel</title>
+<meta name="keywords" content="">
+<meta name="description" content="Hugo : Une Vue Approfondie Origine de Hugo Hugo est un générateur de sites statiques créé par Bjørn Erik Pedersen et développé en Go. Il a été lancé en 2013 avec l&rsquo;objectif de fournir une solution rapide et efficace pour la création de sites web.
+Utilité de Hugo Hugo est largement utilisé pour créer des sites web statiques. Ses principales caractéristiques incluent une performance exceptionnelle, une facilité d&rsquo;utilisation, et une architecture flexible.">
+<meta name="author" content="">
+<link rel="canonical" href="https://bassadam.github.io/blogperso/posts/mon-deuxieme-post/">
+<link crossorigin="anonymous" href="/blogperso/assets/css/stylesheet.5c25c975546c048d1a5600aadb48425ae1bc921a9a18fe67d6955c9535260811.css" integrity="sha256-XCXJdVRsBI0aVgCq20hCWuG8khqaGP5n1pVclTUmCBE=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/blogperso/assets/js/highlight.acb54fd32bbc1982428b8850317e45d076b95012730a5936667e6bc21777692a.js" integrity="sha256-rLVP0yu8GYJCi4hQMX5F0Ha5UBJzClk2Zn5rwhd3aSo="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://bassadam.github.io/blogperso/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://bassadam.github.io/blogperso/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://bassadam.github.io/blogperso/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://bassadam.github.io/blogperso/apple-touch-icon.png">
+<link rel="mask-icon" href="https://bassadam.github.io/blogperso/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Hugo et github pages (2ème post)" />
+<meta property="og:description" content="Hugo : Une Vue Approfondie Origine de Hugo Hugo est un générateur de sites statiques créé par Bjørn Erik Pedersen et développé en Go. Il a été lancé en 2013 avec l&rsquo;objectif de fournir une solution rapide et efficace pour la création de sites web.
+Utilité de Hugo Hugo est largement utilisé pour créer des sites web statiques. Ses principales caractéristiques incluent une performance exceptionnelle, une facilité d&rsquo;utilisation, et une architecture flexible." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bassadam.github.io/blogperso/posts/mon-deuxieme-post/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-11-22T13:22:26+01:00" />
+<meta property="article:modified_time" content="2023-11-22T13:22:26+01:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugo et github pages (2ème post)"/>
+<meta name="twitter:description" content="Hugo : Une Vue Approfondie Origine de Hugo Hugo est un générateur de sites statiques créé par Bjørn Erik Pedersen et développé en Go. Il a été lancé en 2013 avec l&rsquo;objectif de fournir une solution rapide et efficace pour la création de sites web.
+Utilité de Hugo Hugo est largement utilisé pour créer des sites web statiques. Ses principales caractéristiques incluent une performance exceptionnelle, une facilité d&rsquo;utilisation, et une architecture flexible."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://bassadam.github.io/blogperso/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Hugo et github pages (2ème post)",
+      "item": "https://bassadam.github.io/blogperso/posts/mon-deuxieme-post/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Hugo et github pages (2ème post)",
+  "name": "Hugo et github pages (2ème post)",
+  "description": "Hugo : Une Vue Approfondie Origine de Hugo Hugo est un générateur de sites statiques créé par Bjørn Erik Pedersen et développé en Go. Il a été lancé en 2013 avec l\u0026rsquo;objectif de fournir une solution rapide et efficace pour la création de sites web.\nUtilité de Hugo Hugo est largement utilisé pour créer des sites web statiques. Ses principales caractéristiques incluent une performance exceptionnelle, une facilité d\u0026rsquo;utilisation, et une architecture flexible.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Hugo : Une Vue Approfondie Origine de Hugo Hugo est un générateur de sites statiques créé par Bjørn Erik Pedersen et développé en Go. Il a été lancé en 2013 avec l’objectif de fournir une solution rapide et efficace pour la création de sites web.\nUtilité de Hugo Hugo est largement utilisé pour créer des sites web statiques. Ses principales caractéristiques incluent une performance exceptionnelle, une facilité d’utilisation, et une architecture flexible. Il est idéal pour les blogs, portfolios, documentations, et bien d’autres types de sites.\nStructure de Hugo La structure d’un projet Hugo est bien définie. Les principaux dossiers incluent :\ncontent : Contient le contenu du site, écrit en Markdown. layouts : Contient les modèles pour définir la structure et l’apparence des pages. static : Pour les fichiers statiques tels que les images, CSS, et JavaScript. themes : Comprend les thèmes personnalisables pour modifier l’apparence du site. Compatibilité de Hugo Hugo génère des sites statiques, ce qui signifie que le contenu est pré-construit en fichiers HTML avant d’être servi. Cela le rend extrêmement compatible avec divers services d’hébergement et ne nécessite pas de serveur spécifique.\nAvantages et Inconvénients Avantages Rapidité : Grâce à sa compilation rapide, Hugo est l’un des générateurs de sites les plus rapides. Facilité d’utilisation : La simplicité de la syntaxe Markdown et la configuration minimale facilitent son utilisation. Flexibilité : Les thèmes et la structure modulaire offrent une grande flexibilité. Inconvénients Courbe d’apprentissage : Bien que simple, l’utilisation de certains aspects avancés de Hugo peut nécessiter une certaine familiarité avec la ligne de commande. Moins adapté aux sites dynamiques : Hugo est idéal pour les sites statiques, mais peut être moins adapté aux sites nécessitant une mise à jour constante. En conclusion, Hugo est un outil puissant et polyvalent pour la création de sites web statiques, offrant rapidité, simplicité, et flexibilité.\nGitHub Pages : Plateforme de Publication de Sites Web Gratuite Origine de GitHub Pages GitHub Pages est un service de publication de pages web proposé par GitHub, la plateforme de gestion de versions basée sur Git. Il a été lancé pour la première fois en 2008, offrant aux utilisateurs de GitHub un moyen simple de publier leurs sites web directement à partir de leurs référentiels Git.\nUtilité de GitHub Pages GitHub Pages offre aux développeurs, aux projets open source et aux équipes une plateforme gratuite et facile à utiliser pour héberger des sites web. C’est une solution idéale pour créer des pages de documentation, des blogs, des portfolios, ou même des sites web complets associés à des projets GitHub.\nStructure et Fonctionnement Branches Spéciales : GitHub Pages utilise des branches spéciales pour générer le contenu du site. La branche gh-pages est souvent utilisée, mais vous pouvez également utiliser la branche master ou d’autres branches spécifiques.\nFormat des Fichiers : Les fichiers pris en charge incluent HTML, CSS, JavaScript, et d’autres fichiers statiques. Les sites générés peuvent également utiliser des générateurs de site statique tels que Jekyll.\nPublication Automatique : Lorsque vous poussez des modifications vers la branche dédiée, GitHub Pages reconnaît automatiquement les changements et les publie en direct sur le site.\nAvantages de l’utilisation de GitHub Pages Gratuité : GitHub Pages est entièrement gratuit, offrant une solution d’hébergement sans frais pour les projets open source et les utilisateurs individuels.\nIntégration Git : La gestion de versions avec Git permet de contrôler facilement l’historique des modifications et de collaborer efficacement.\nPersonnalisation : Vous pouvez personnaliser le domaine de votre site, utiliser un thème Jekyll, et intégrer des fonctionnalités telles que des formulaires de contact.\nFacilité de Configuration : La configuration est simple, en utilisant des fichiers de configuration tels que config.yml pour spécifier des paramètres.\nIntégration avec le Workflow GitHub : GitHub Pages s’intègre parfaitement avec les autres fonctionnalités de GitHub, facilitant le déploiement continu.\nInconvénients Potentiels Bien que GitHub Pages soit une solution populaire, il y a quelques points à considérer :\nComplexité Limitée : Pour des sites web plus complexes, vous pourriez avoir besoin d’envisager des solutions d’hébergement plus avancées.\nTemps de Génération : Les sites Jekyll peuvent nécessiter du temps pour la génération, en particulier pour les sites volumineux.\nEn conclusion, GitHub Pages est une option puissante et pratique pour publier des sites web, offrant un équilibre entre simplicité, fonctionnalités et intégration avec l’écosystème GitHub.\nConclusion : Hugo combiné a Github Pages En résumé, l’utilisation de Hugo en conjonction avec GitHub Pages offre une solution puissante et flexible pour la création et le déploiement de sites web statiques. Voici quelques points clés à retenir et quelques conseils pour optimiser votre expérience :\nGitHub Pages offre un moyen simple et gratuit de déployer vos sites Hugo. En créant une branche “gh-pages” dans votre référentiel GitHub, vous pouvez héberger votre site directement depuis votre dépôt, simplifiant ainsi le processus de déploiement.\nAutomatisation avec Actions GitHub Utilisez GitHub Actions pour automatiser le processus de génération et de déploiement de votre site Hugo. Créez un fichier de workflow pour déclencher la génération du site à chaque mise à jour du contenu, assurant ainsi que votre site reste toujours à jour.\nMaintenance et Suivi Soyez attentif aux mises à jour de Hugo et de vos thèmes. Assurez-vous de garder votre environnement de développement à jour pour bénéficier des dernières fonctionnalités et corrections de bogues.\nEn combinant ces conseils avec votre créativité et vos besoins spécifiques, vous pouvez exploiter pleinement la puissance de Hugo et GitHub Pages pour créer et maintenir des sites web statiques de manière efficace et professionnelle. Happy coding! 🚀\n",
+  "wordCount" : "917",
+  "inLanguage": "en",
+  "datePublished": "2023-11-22T13:22:26+01:00",
+  "dateModified": "2023-11-22T13:22:26+01:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://bassadam.github.io/blogperso/posts/mon-deuxieme-post/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog Personnel",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://bassadam.github.io/blogperso/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://bassadam.github.io/blogperso/" accesskey="h" title="Blog Personnel (Alt + H)">Blog Personnel</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Hugo et github pages (2ème post)
+    </h1>
+    <div class="post-meta"><span title='2023-11-22 13:22:26 +0100 CET'>November 22, 2023</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="hugo--une-vue-approfondie">Hugo : Une Vue Approfondie<a hidden class="anchor" aria-hidden="true" href="#hugo--une-vue-approfondie">#</a></h1>
+<h2 id="origine-de-hugo">Origine de Hugo<a hidden class="anchor" aria-hidden="true" href="#origine-de-hugo">#</a></h2>
+<p>Hugo est un générateur de sites statiques créé par Bjørn Erik Pedersen et développé en Go. Il a été lancé en 2013 avec l&rsquo;objectif de fournir une solution rapide et efficace pour la création de sites web.</p>
+<h2 id="utilité-de-hugo">Utilité de Hugo<a hidden class="anchor" aria-hidden="true" href="#utilité-de-hugo">#</a></h2>
+<p>Hugo est largement utilisé pour créer des sites web statiques. Ses principales caractéristiques incluent une performance exceptionnelle, une facilité d&rsquo;utilisation, et une architecture flexible. Il est idéal pour les blogs, portfolios, documentations, et bien d&rsquo;autres types de sites.</p>
+<h2 id="structure-de-hugo">Structure de Hugo<a hidden class="anchor" aria-hidden="true" href="#structure-de-hugo">#</a></h2>
+<p>La structure d&rsquo;un projet Hugo est bien définie. Les principaux dossiers incluent :</p>
+<ul>
+<li><strong>content :</strong> Contient le contenu du site, écrit en Markdown.</li>
+<li><strong>layouts :</strong> Contient les modèles pour définir la structure et l&rsquo;apparence des pages.</li>
+<li><strong>static :</strong> Pour les fichiers statiques tels que les images, CSS, et JavaScript.</li>
+<li><strong>themes :</strong> Comprend les thèmes personnalisables pour modifier l&rsquo;apparence du site.</li>
+</ul>
+<h2 id="compatibilité-de-hugo">Compatibilité de Hugo<a hidden class="anchor" aria-hidden="true" href="#compatibilité-de-hugo">#</a></h2>
+<p>Hugo génère des sites statiques, ce qui signifie que le contenu est pré-construit en fichiers HTML avant d&rsquo;être servi. Cela le rend extrêmement compatible avec divers services d&rsquo;hébergement et ne nécessite pas de serveur spécifique.</p>
+<h2 id="avantages-et-inconvénients">Avantages et Inconvénients<a hidden class="anchor" aria-hidden="true" href="#avantages-et-inconvénients">#</a></h2>
+<h3 id="avantages">Avantages<a hidden class="anchor" aria-hidden="true" href="#avantages">#</a></h3>
+<ul>
+<li><strong>Rapidité :</strong> Grâce à sa compilation rapide, Hugo est l&rsquo;un des générateurs de sites les plus rapides.</li>
+<li><strong>Facilité d&rsquo;utilisation :</strong> La simplicité de la syntaxe Markdown et la configuration minimale facilitent son utilisation.</li>
+<li><strong>Flexibilité :</strong> Les thèmes et la structure modulaire offrent une grande flexibilité.</li>
+</ul>
+<h3 id="inconvénients">Inconvénients<a hidden class="anchor" aria-hidden="true" href="#inconvénients">#</a></h3>
+<ul>
+<li><strong>Courbe d&rsquo;apprentissage :</strong> Bien que simple, l&rsquo;utilisation de certains aspects avancés de Hugo peut nécessiter une certaine familiarité avec la ligne de commande.</li>
+<li><strong>Moins adapté aux sites dynamiques :</strong> Hugo est idéal pour les sites statiques, mais peut être moins adapté aux sites nécessitant une mise à jour constante.</li>
+</ul>
+<p>En conclusion, Hugo est un outil puissant et polyvalent pour la création de sites web statiques, offrant rapidité, simplicité, et flexibilité.</p>
+<hr>
+<h1 id="github-pages--plateforme-de-publication-de-sites-web-gratuite">GitHub Pages : Plateforme de Publication de Sites Web Gratuite<a hidden class="anchor" aria-hidden="true" href="#github-pages--plateforme-de-publication-de-sites-web-gratuite">#</a></h1>
+<h2 id="origine-de-github-pages">Origine de GitHub Pages<a hidden class="anchor" aria-hidden="true" href="#origine-de-github-pages">#</a></h2>
+<p>GitHub Pages est un service de publication de pages web proposé par GitHub, la plateforme de gestion de versions basée sur Git. Il a été lancé pour la première fois en 2008, offrant aux utilisateurs de GitHub un moyen simple de publier leurs sites web directement à partir de leurs référentiels Git.</p>
+<h2 id="utilité-de-github-pages">Utilité de GitHub Pages<a hidden class="anchor" aria-hidden="true" href="#utilité-de-github-pages">#</a></h2>
+<p>GitHub Pages offre aux développeurs, aux projets open source et aux équipes une plateforme gratuite et facile à utiliser pour héberger des sites web. C&rsquo;est une solution idéale pour créer des pages de documentation, des blogs, des portfolios, ou même des sites web complets associés à des projets GitHub.</p>
+<h2 id="structure-et-fonctionnement">Structure et Fonctionnement<a hidden class="anchor" aria-hidden="true" href="#structure-et-fonctionnement">#</a></h2>
+<ol>
+<li>
+<p><strong>Branches Spéciales :</strong> GitHub Pages utilise des branches spéciales pour générer le contenu du site. La branche <code>gh-pages</code> est souvent utilisée, mais vous pouvez également utiliser la branche <code>master</code> ou d&rsquo;autres branches spécifiques.</p>
+</li>
+<li>
+<p><strong>Format des Fichiers :</strong> Les fichiers pris en charge incluent HTML, CSS, JavaScript, et d&rsquo;autres fichiers statiques. Les sites générés peuvent également utiliser des générateurs de site statique tels que Jekyll.</p>
+</li>
+<li>
+<p><strong>Publication Automatique :</strong> Lorsque vous poussez des modifications vers la branche dédiée, GitHub Pages reconnaît automatiquement les changements et les publie en direct sur le site.</p>
+</li>
+</ol>
+<h2 id="avantages-de-lutilisation-de-github-pages">Avantages de l&rsquo;utilisation de GitHub Pages<a hidden class="anchor" aria-hidden="true" href="#avantages-de-lutilisation-de-github-pages">#</a></h2>
+<p><strong>Gratuité :</strong> GitHub Pages est entièrement gratuit, offrant une solution d&rsquo;hébergement sans frais pour les projets open source et les utilisateurs individuels.</p>
+<p><strong>Intégration Git :</strong> La gestion de versions avec Git permet de contrôler facilement l&rsquo;historique des modifications et de collaborer efficacement.</p>
+<p><strong>Personnalisation :</strong> Vous pouvez personnaliser le domaine de votre site, utiliser un thème Jekyll, et intégrer des fonctionnalités telles que des formulaires de contact.</p>
+<p><strong>Facilité de Configuration :</strong> La configuration est simple, en utilisant des fichiers de configuration tels que <code>config.yml</code> pour spécifier des paramètres.</p>
+<p><strong>Intégration avec le Workflow GitHub :</strong> GitHub Pages s&rsquo;intègre parfaitement avec les autres fonctionnalités de GitHub, facilitant le déploiement continu.</p>
+<h2 id="inconvénients-potentiels">Inconvénients Potentiels<a hidden class="anchor" aria-hidden="true" href="#inconvénients-potentiels">#</a></h2>
+<p>Bien que GitHub Pages soit une solution populaire, il y a quelques points à considérer :</p>
+<ul>
+<li>
+<p><strong>Complexité Limitée :</strong> Pour des sites web plus complexes, vous pourriez avoir besoin d&rsquo;envisager des solutions d&rsquo;hébergement plus avancées.</p>
+</li>
+<li>
+<p><strong>Temps de Génération :</strong> Les sites Jekyll peuvent nécessiter du temps pour la génération, en particulier pour les sites volumineux.</p>
+</li>
+</ul>
+<p>En conclusion, GitHub Pages est une option puissante et pratique pour publier des sites web, offrant un équilibre entre simplicité, fonctionnalités et intégration avec l&rsquo;écosystème GitHub.</p>
+<hr>
+<h2 id="conclusion--hugo-combiné-a-github-pages">Conclusion : Hugo combiné a Github Pages<a hidden class="anchor" aria-hidden="true" href="#conclusion--hugo-combiné-a-github-pages">#</a></h2>
+<p>En résumé, l&rsquo;utilisation de <a href="https://gohugo.io/">Hugo</a> en conjonction avec <a href="https://pages.github.com/">GitHub Pages</a> offre une solution puissante et flexible pour la création et le déploiement de sites web statiques. Voici quelques points clés à retenir et quelques conseils pour optimiser votre expérience :</p>
+<p><a href="https://pages.github.com/">GitHub Pages</a> offre un moyen simple et gratuit de déployer vos sites <a href="https://gohugo.io/">Hugo</a>. En créant une branche &ldquo;gh-pages&rdquo; dans votre référentiel GitHub, vous pouvez héberger votre site directement depuis votre dépôt, simplifiant ainsi le processus de déploiement.</p>
+<h3 id="automatisation-avec-actions-github">Automatisation avec Actions GitHub<a hidden class="anchor" aria-hidden="true" href="#automatisation-avec-actions-github">#</a></h3>
+<p>Utilisez <a href="https://github.com/features/actions">GitHub Actions</a> pour automatiser le processus de génération et de déploiement de votre site <a href="https://gohugo.io/">Hugo</a>. Créez un fichier de workflow pour déclencher la génération du site à chaque mise à jour du contenu, assurant ainsi que votre site reste toujours à jour.</p>
+<h3 id="maintenance-et-suivi">Maintenance et Suivi<a hidden class="anchor" aria-hidden="true" href="#maintenance-et-suivi">#</a></h3>
+<p>Soyez attentif aux mises à jour de <a href="https://gohugo.io/">Hugo</a> et de vos thèmes. Assurez-vous de garder votre environnement de développement à jour pour bénéficier des dernières fonctionnalités et corrections de bogues.</p>
+<p>En combinant ces conseils avec votre créativité et vos besoins spécifiques, vous pouvez exploiter pleinement la puissance de <a href="https://gohugo.io/">Hugo</a> et <a href="https://pages.github.com/">GitHub Pages</a> pour créer et maintenir des sites web statiques de manière efficace et professionnelle. Happy coding! 🚀</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://bassadam.github.io/blogperso/">Blog Personnel</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
